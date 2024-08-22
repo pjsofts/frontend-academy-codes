@@ -1,0 +1,26 @@
+body {
+    background-color: #f2f2f2;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
