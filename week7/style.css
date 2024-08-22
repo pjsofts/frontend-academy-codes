@@ -1,0 +1,16 @@
+.question {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    height: 100px;
+    width: 400px;
+}
+
+.success {
+    background-color: rgb(108, 233, 108);
+}
+
+.fail {
+    background-color: rgb(255, 210, 210);
+}

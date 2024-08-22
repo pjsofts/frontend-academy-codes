@@ -1,0 +1,16 @@
+.message {
+
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    height: 200px;
+
+    color: #ee4141;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+

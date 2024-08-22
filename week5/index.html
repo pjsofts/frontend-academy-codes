@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="author" type="text" placeholder="author">
+    <input id="title" type="text" placeholder="title">
+    <button onclick="add()" type="button">add</button>
+    <div>
+        <input id="search" type="text" placeholder="search author">
+        <button onclick="search()" type="button">search</button>
+    </div>
+    <div id="result">
+
+    </div>
+    <script>
+        const books = [];
+        function add() {
+            const author = document.getElementById("author").value;
+            const title = document.getElementById("title").value;
+            books.push({ author: author, title: title })
+            console.log(books);
+        }
+        function search() {
+            const search = document.getElementById("search").value;
+            const result = document.getElementById("result");
+            for (let book of books) {
+                if (book.author === search) {
+                    result.textContent += book.title;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
